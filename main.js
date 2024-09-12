@@ -8,6 +8,7 @@
 		</div>
 	`
 	class Main extends HTMLElement {
+		
 		constructor () {
 			super()
 			this._shadowRoot = this.attachShadow({ mode: 'open' })
@@ -15,17 +16,6 @@
 			this._root = this._shadowRoot.getElementById('root')
 			
 			this._eChart = null
-		}
-		
-		onCustomWidgetResize(width, height){
-			this.render()
-		} 
-		
-		onCustomWidgetAfterUpdate(changeProps){
-			this.render()
-		}
-		
-		onCustomWidgetDestory(){
 		}
 		
 		var getScriptPromisify = (src) => {
@@ -51,6 +41,18 @@
 			return { dimensions, measures, dimensionsMap, measuresMap}
 		}
 		
+		onCustomWidgetResize(width, height){
+			this.render()
+		} 
+		
+		onCustomWidgetAfterUpdate(changeProps){
+			this.render()
+		}
+		
+		onCustomWidgetDestory(){
+		}
+		
+				
 		async render(){
 			const dataBinding = this.dataBinding
 			if(!dataBinding || dataBinding.state !== 'success'){
