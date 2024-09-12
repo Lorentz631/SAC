@@ -17,7 +17,7 @@
 			
 			this._eChart = null
 		}
-		
+		/*
 		var getScriptPromisify = (src) => {
 			return new Promise((resolve) => {
 				$.getScript(src, resolve)
@@ -40,6 +40,7 @@
 			
 			return { dimensions, measures, dimensionsMap, measuresMap}
 		}
+		*/
 		
 		onCustomWidgetResize(width, height){
 			this.render()
