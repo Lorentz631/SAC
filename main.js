@@ -20,13 +20,13 @@
 		} 
 		
 		onCustomWidgetAfterUpdate(changeProps){
-			
+			this.render()
 		}
 		
 		onCustomWidgetDestory(){
 		}
 		
-		render(){
+		async render(){
 			const dataBinding = this.dataBinding
 			if(!dataBinding || dataBinding.state !== 'success'){
 				return
