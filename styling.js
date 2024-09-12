@@ -55,5 +55,5 @@
     }
   }
 
-  customElements.define('com-sap-sac-exercise-008-styling', Styling)
+  customElements.define('com-sap-sac-exercise-jhshim-styling', Styling)
 })()
