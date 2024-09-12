@@ -59,8 +59,8 @@
 				return
 			}
 			//this._root.textContent = `Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
-			//this._root.textContent = JSON.stringify(dataBinding) 
-			
+			this._root.textContent = JSON.stringify(dataBinding) 
+			/*
 			await getScriptPromisify('https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js')
 			
 			const {data, metadata} = dataBinding
@@ -102,6 +102,7 @@
 			  series
 			}
 			eChart.setOption(option)
+			*/
 		}
 	
 	}
