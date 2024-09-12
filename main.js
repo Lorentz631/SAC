@@ -32,7 +32,7 @@
 				return
 			}
 			//this._root.textContent = `Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
-			this._root.textContent = JSON.stringify(dataBinding)
+			this._root.textContent = JSON.stringify(dataBinding) 
 		}
 	
 	}
